@@ -1,0 +1,367 @@
+/* ==== Base Layout Styles ==== */
+
+* {
+	box-sizing: border-box;
+}
+
+h1, h2, p {
+	text-align: center;
+}
+
+/* ==== Base Fonts/Colors ==== */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(0,0,0,.87);
+	font-weight: 300;
+	background-color: #FAFAFA;
+}
+
+h1,
+h2,
+legend,
+button {
+	font-family: 'Bree Serif', serif;
+}
+
+h2,
+legend {
+	color: #311B92;
+}
+
+p {
+	color: rgba(0,0,0,.54);
+}
+
+.copyright {
+	font-style: italic;
+}
+
+/* ====Header Styles==== */
+
+header {
+	width: 100%;
+	height: 4.5em;
+	background-color: #311B92;
+	margin-top: 0px;
+}
+
+h1 {
+	margin: 0px auto;
+	font-size: 1.75em;
+	color: #FAFAFA;
+	padding-top: .5em;
+}
+
+/* ====Intro Banner Styles ==== */
+
+.intro {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.intro h2 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 1.5em;
+	padding-left: .75em;
+	padding-right: .75em;
+}
+
+.intro p {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+	font-size: 1em;
+}
+
+/* =====Form Styles ==== */
+
+/* -- layout -- */
+
+form {
+	margin: 10px auto;
+	padding: 10px 20px;
+}
+
+fieldset {
+	padding: 0px 0px 20px 0px;
+	border: none;
+}
+
+/* -- section and item labels -- */
+
+legend {
+	font-size: 1.5em;
+	float: left;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+label {
+	font-size: 1em;
+	display: block;
+	margin-bottom: 10px;
+}
+
+label.bold {
+	font-weight: 700;
+}
+
+label.right {
+	cursor: pointer;
+}
+
+/* -- text field & select styles -- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+	background-color: #e5e5e6;
+	color: rgba(0,0,0,.87);
+	border: none;
+	border-radius: 5px;
+	font-size: 1em;
+	height: auto;
+	margin: 0;
+	outline: 0;
+	padding: .75em;
+	width: 100%;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 20px;
+}
+
+select {
+	padding: .5em;
+	height: 3em;
+}
+
+#zip {
+	width: 120px;
+}
+
+/* -- aligns the placeholder text right -- */
+
+::-webkit-input-placeholder {
+	text-align: right;
+}
+
+::-moz-placeholder {
+	text-align: right;
+}
+
+:-ms-input-placeholder {
+	text-align: right;
+}
+
+:-moz-placeholder {
+	text-align: right;
+}
+
+/* -- checkboxes and radio buttons styles w/ animated transitions -- */
+
+input[type="checkbox"],
+input[type="radio"] {
+	display: none;
+}
+
+input[type="checkbox"] + .label_text::before {
+	font-family: FontAwesome;
+	content: "\f0c8";
+	color: #e5e5e6;
+	font-size: 1em;
+	display: inline-block;
+	margin-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input[type="checkbox"]:checked + .label_text::before {
+	font-family: FontAwesome;
+	content: "\f046";
+	color: #311B92;
+	font-size: 1em;
+	display: inline-block;
+	margin-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input[type="radio"] + .label_text::before {
+	font-family: FontAwesome;
+	content: "\f111";
+	color: #e5e5e6;
+	font-size: 1em;
+	display: inline-block;
+	margin-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+input[type="radio"]:checked + .label_text::before {
+	font-family: FontAwesome;
+	content: "\f192";
+	color: #311B92;
+	font-size: 1em;
+	display: inline-block;
+	margin-right: 7px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+label.right {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+/* -- submit button styles -- */
+
+button {
+	display: inline-block;
+	padding: 1em;
+	width: 100%;
+	font-size: 1.375em;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	color: #FFF;
+	background: #C6FF00;
+	background: -moz-linear-gradient(top, #C6FF00 0%, #AEEA00 100%);
+	background: -webkit-linear-gradient(top, #C6FF00 0%, #AEEA00 100%);
+	background: linear-gradient(#C6FF00 0%, #AEEA00 100%);
+}
+
+button:hover {
+	background: #AEEA00;
+	background: -moz-linear-gradient(top, #C6FF00 0%, #AEEA00 100%);
+	background: -webkit-linear-gradient(bottom, #C6FF00 0%, #AEEA00 100%);
+	background: linear-gradient(to top, #C6FF00 0%, #AEEA00 100%);
+}
+
+/* =====Borders==== */
+
+.borders {
+	border-top: 5px solid #311B92;
+	border-bottom: 2.5px solid #311B92;
+	position: relative;
+}
+
+/* -- makes a double border at the top of the form -- */
+
+.borders::before {
+	content: " ";
+	position: absolute;
+	top: 5px;
+	left: 0;
+	right: 0;
+	border: 1.75px solid #311B92;
+}
+
+/* ====Input Focus State Transitions===*/
+
+/* -- color transition for non-required fields --*/
+
+#phone,
+#street,
+#city,
+#zip,
+textarea {
+	transition: all .5s ease;
+}
+
+#phone:focus,
+#street:focus,
+#city:focus,
+#zip:focus,
+textarea:focus {
+	background-color: #F9FBE7;
+}
+
+/* -- color coded hints for required fields (HTML validation) -- */
+
+input:required {
+	transition: all .5s ease;
+}
+
+input:focus:required:invalid {
+	background: rgba(169,68,66,.38);
+}
+
+input:required:valid {
+	background: rgba(104,159,56,.38);
+}
+
+/* ====Media Queries===*/
+
+@media(min-width: 760px) {
+
+	.intro,
+	form {
+		max-width: 68%;
+		margin: 0 auto;
+	}
+
+	.borders input,
+	.borders select {
+		float: left;
+		width: 70%;
+	}
+
+	#zip {
+		width: 120px;
+	}
+
+	.borders label {
+		display: inline-block;
+		float: left;
+		clear: left;
+		width: 30%;
+		padding-top: .75em;
+		margin-bottom: 0;
+		text-align: left;
+	}
+
+	button {
+		font-size: 1.5em;
+	}
+}
+
+@media(min-width: 1024px) {
+
+	.intro,
+	form {
+		max-width: 650px;
+	}
+
+	.intro p,
+	label,
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	textarea,
+	select
+	 {
+		font-size: 1.2em;
+	}
+
+	input[type="checkbox"] + .label_text::before,
+	input[type="checkbox"]:checked + .label_text::before,
+	input[type="radio"] + .label_text::before,
+	input[type="radio"]:checked + .label_text::before {
+	font-size: 1.2em;
+	}
+
+}
+
+
+
+
+
+
+
+
